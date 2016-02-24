@@ -1,0 +1,197 @@
+\documentclass[]{cv}
+\usepackage[english]{babel}
+
+\usepackage{graphicx}
+\usepackage{setspace}
+\graphicspath{ {images/} }
+
+\hypersetup{
+  pdftitle={Lorenzo David resumé},
+  pdfauthor={Lorenzo David},
+  pdfcreator={Lorenzo David},
+  pdfsubject={Resumé},
+  pdfkeywords={PDF,LaTeX,Lorenzo,David,resume,cv}
+}
+\definecolor{airforceblue}{rgb}{0.36, 0.54, 0.66}
+
+\newcommand{\vcenteredinclude}[1]{\begingroup
+\setbox0=\hbox{\includegraphics[height=1.5em]{#1}}%
+\parbox{\wd0}{\box0}\endgroup}
+
+
+\begin{document}
+
+
+%%%% HEADER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\header{Lorenzo}{ David}{\textbf{\textcolor{airforceblue}{Software Engineer}}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%% FOOTER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\footer{\today}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%% ASIDE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%% MAIN1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{About}
+\aside{
+  \small{lorenzodavid91@gmail.com}\\
+  \small{+1 (408) 306-6282 (US)}
+  {\setstretch{2.0}
+    \footnotesize{Skype: lorenzo\_2409}}
+  \href{https://www.linkedin.com/in/lorenzo-david-b7894591}{\tiny{https://www.linkedin.com/in/lorenzo-david-b7894591}}
+
+}
+
+\parbox[t]{\textwidth}{\textbf{Double Degre M.S. Politecnico di
+    Torino, EURECOM and Telecom ParisTech}}
+
+Graduated in Computer Security and Computer Networking with strong
+interest for distributed systems.
+
+I carried out an experience in the Silicon Valley within a SDN
+Startup. This context enriched my vision on new technologies and
+allowed me to learn from brilliant people.
+
+I am currently working for PLUMgrid.
+
+\framebreak
+
+\section{Professional Experience}
+\begin{entrylistlogodated}
+\entrylogodated
+       {2015 \scriptsize{(July - Current)}}
+       {
+         \vcenteredinclude{./img/plumgrid.eps}
+       }
+       {Software Engineer at PLUMgrid Inc.}
+       {Santa Clara, USA}
+       {
+         Incubated project on a Hybrid Cloud controller
+         \begin{itemize}
+         \item Designed and Implemented an Identity Access Management
+           (IAM) module
+           \begin{itemize}
+           \item Authentication protocols (SAML, OpenID Connect, LDAP)
+           \item Authorization (RBAC)
+           \item OpenStack Keystone to Keystone Federation, Amazon IAM
+           \end{itemize}
+         \item OpenStack and PLUMgrid infrastructure deployment
+           \begin{itemize}
+           \item Automation tools: Ansible, Puppet, in-house tools
+             (Python, Bash)
+           \item Linux SysAdmin: LXC, LXC networking, iptables
+           \item PaaS: Google App Engine, AppScale
+           \end{itemize}
+         \end{itemize}
+       }
+\end{entrylistlogodated}
+
+\section{Education}
+\begin{entrylistlogodated}
+\entrylogodated
+    {2014 - 2015}
+    {
+      \vcenteredinclude{./img/eurecom.jpg}
+    }
+    {Master in Computer Security (2nd Year) at EURECOM}
+    {Sophia Antipolis, France}
+    {
+      Courses focusing on System and Networking Security\\
+      Semester project
+      \begin{itemize}
+      \item ``PryTag: privacy preserving aggregation of data'' (19/20)\\
+        Implementation and benchmarking of a distributed cryptographic
+        protocol in C, Python and OCaml for an ARM embedded system using
+        Xen virtualization
+      \end{itemize}
+      Final thesis
+      \begin{itemize}
+      \item ``Identity Access Management for Cloud Computing'' (18/20)\\
+        Research oriented to Federated Hybrid Cloud
+      \end{itemize}
+    }
+\end{entrylistlogodated}
+
+\begin{entrylistlogodated}
+\entrylogodated
+    {2013 - 2014}
+    {
+      \vcenteredinclude{./img/polito.jpg}
+    }
+    {Master in Computer Networking (1st Year) at Politecnico di Torino}
+    {Turin, Italy}
+    {
+      Courses focusing on Networking and Software Engineering
+      \begin{itemize}
+      \item Networking: IPv6, MPLS, VPN, QoS, socket programming.
+      \item Data base: data warehouse, data mining.
+      \item System and device programming (.NET semester project).
+      \item Programming: Assembly, OpenCL, C++, C\#, operating research (Java).
+      \end{itemize}
+    }
+\end{entrylistlogodated}
+
+\begin{entrylistlogodated}
+\entrylogodated
+    {2010 - 2013}
+    {
+      \vcenteredinclude{./img/polito.jpg}
+    }
+    {Bachelor at Politecnico di Torino}
+    {Turin, Italy}
+    {
+      Grade: 110/110 cum Laude\\
+      Algorithms (C), Computer Architecture, OS (Linux), Networking,
+      DB, Object oriented programming (Java).
+    }
+\end{entrylistlogodated}
+
+\section{Projects}
+\begin{entrylistlogodated}
+   \entrydated
+       {2014 Fall}
+       {Mouse and keyboard sharing for Windows}
+       {}
+       {
+         \begin{tabularx}{\textwidth}{XXXXXXXX}
+           Supervisor: & Malnati, G. & & & & & & \tabularnewline
+         \end{tabularx}
+         Development of an application for remote pc sharing focusing
+         on robustness and security.\\
+         Keywords: Microsoft Visual Studio, C\#, .NET, WPF, ssl.
+       }
+  \entrydated
+      {2014 Spring}
+      {Live migration of Linux Containers}
+      {}
+      {
+        \begin{tabularx}{\textwidth}{XXXXXXXX}
+          Supervisor: & Risso, F. & & & & & & \tabularnewline
+        \end{tabularx}
+        Theoretical and practical state of art's analysis and
+        comparison of virtualization techniques that support live migration.\\
+        Keywords: hypervisor, container, LXC, Dockers, DMTCP, CRIU.
+      }
+\end{entrylistlogodated}
+
+%% \framebreak
+
+\section{Languages}
+Native \textbf{italian} speaker passionate about languages.\\
+\providecommand{\tabularnewline}{\\}
+\setlength{\tabcolsep}{5pt}
+\begin{tabularx}{\textwidth}{X r | X r | X r }
+  \textbf{English} & \textbf{\textcolor{airforceblue}{CAE - C1}} & \textbf{French} & \textbf{\textcolor{airforceblue}{C1}}  & \textbf{German} & \textbf{\textcolor{airforceblue}{\"OSD - B1}} \tabularnewline
+\end{tabularx}
+
+\end{document}
+
+%  LocalWords:  SDN PLUMgrid OCaml Xen Politecnico di Torino IPv MPLS
+%  LocalWords:  VPN OpenCL cum Laude virtualization hypervisor LXC pc
+%  LocalWords:  Dockers DMTCP CRIU WPF ssl

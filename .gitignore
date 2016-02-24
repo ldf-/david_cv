@@ -1,0 +1,8 @@
+# Emacs
+*~
+
+# LaTeX compilation artifacts
+*.aux
+*.log
+*.out
+*.pdf
