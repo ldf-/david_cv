@@ -3,6 +3,7 @@
 
 \usepackage{graphicx}
 \usepackage{setspace}
+\usepackage{hyperref}
 \graphicspath{ {images/} }
 
 \hypersetup{
@@ -41,24 +42,27 @@
 \section{About}
 \aside{
   \small{lorenzodavid91@gmail.com}\\
-  \small{+1 (408) 306-6282 (US)}
+  \small{+1 (408) 306-6282 (US)}\\
   {\setstretch{2.0}
-    \footnotesize{Skype: lorenzo\_2409}}
-  \href{https://www.linkedin.com/in/lorenzo-david-b7894591}{\tiny{https://www.linkedin.com/in/lorenzo-david-b7894591}}
+    \footnotesize{Skype: lorenzo\_2409}\\
+    \footnotesize{https://github.com/lorenzodavid}
+  }
+  \href{https://www.linkedin.com/in/lorenzo-david-b7894591}{\tiny{linkedin.com/in/lorenzo-david-b7894591}
+}
+
 
 }
 
-\parbox[t]{\textwidth}{\textbf{Double Degre M.S. Politecnico di
-    Torino, EURECOM and Telecom ParisTech}}
+% \parbox[t]{\textwidth}{\textbf{}}
 
-Graduated in Computer Security and Computer Networking with strong
-interest for distributed systems.
+Master graduated in Computer Security and Computer Networking with
+strong interest for cutting-edge technologies that enable modern
+distributed systems.
 
-I carried out an experience in the Silicon Valley within a SDN
-Startup. This context enriched my vision on new technologies and
-allowed me to learn from brilliant people.
+I am currently working for PLUMgrid, an SDN Startup in the Silicon
+Valley.
 
-I am currently working for PLUMgrid.
+I got selected for H-1B Working VISA starting from October 2016.
 
 \framebreak
 
@@ -72,23 +76,26 @@ I am currently working for PLUMgrid.
        {Software Engineer at PLUMgrid Inc.}
        {Santa Clara, USA}
        {
-         Incubated project on a Hybrid Cloud controller
-         \begin{itemize}
-         \item Designed and Implemented an Identity Access Management
-           (IAM) module
+         I have been working with two main teams, using an agile
+         methodology with task tracking, daily standups and code requirement
+         (specification documents, unit tests, code reviews).
+
+         \begin{enumerate}
+         \item Federated Hybrid Cloud controller
            \begin{itemize}
-           \item Authentication protocols (SAML, OpenID Connect, LDAP)
-           \item Authorization (RBAC)
-           \item OpenStack Keystone to Keystone Federation, Amazon IAM
+           \item Designed and Implemented an Identity Access Management
+             (IAM) module
+           \item OpenStack and PLUMgrid infrastructure deployment (CI
+             Pipelines, Automation tools, Software distribution)
            \end{itemize}
-         \item OpenStack and PLUMgrid infrastructure deployment
+         \item Live Memory tracking for production systems
            \begin{itemize}
-           \item Automation tools: Ansible, Puppet, in-house tools
-             (Python, Bash)
-           \item Linux SysAdmin: LXC, LXC networking, iptables
-           \item PaaS: Google App Engine, AppScale
+           \item Low overhead debugging and profiling tool for C++
+             programs.
+           \item The project involved in-depth researches on compilers,
+             memory management and low level C programming.
            \end{itemize}
-         \end{itemize}
+         \end{enumerate}
        }
 \end{entrylistlogodated}
 
@@ -102,18 +109,25 @@ I am currently working for PLUMgrid.
     {Master in Computer Security (2nd Year) at EURECOM}
     {Sophia Antipolis, France}
     {
-      Courses focusing on System and Networking Security\\
+      Highly specialized Master courses in Computer Security:
+      \begin{itemize}
+      \item System and Network Security
+      \item Forensics
+      \item Malware and binary analysis
+      \item Image security and watermarking
+      \item Security of distributed systems
+      \item Side channel attacks
+      \end{itemize}
       Semester project
       \begin{itemize}
-      \item ``PryTag: privacy preserving aggregation of data'' (19/20)\\
-        Implementation and benchmarking of a distributed cryptographic
-        protocol in C, Python and OCaml for an ARM embedded system using
-        Xen virtualization
+      \item ``PryTag: privacy preserving aggregation of data''\\
+        Distributed cryptographic protocol in C, Python and OCaml for
+        MirageOS (Unikernel Operating System).
       \end{itemize}
       Final thesis
       \begin{itemize}
-      \item ``Identity Access Management for Cloud Computing'' (18/20)\\
-        Research oriented to Federated Hybrid Cloud
+      \item ``Identity Access Management for Cloud Computing''\\
+        Research oriented to Cloud Federation
       \end{itemize}
     }
 \end{entrylistlogodated}
@@ -127,12 +141,14 @@ I am currently working for PLUMgrid.
     {Master in Computer Networking (1st Year) at Politecnico di Torino}
     {Turin, Italy}
     {
+      Grade: 110/110 cum Laude\\
       Courses focusing on Networking and Software Engineering
       \begin{itemize}
       \item Networking: IPv6, MPLS, VPN, QoS, socket programming.
-      \item Data base: data warehouse, data mining.
+      \item Data analysis: data warehouse, data mining (Hadoop, Pentaho).
       \item System and device programming (.NET semester project).
-      \item Programming: Assembly, OpenCL, C++, C\#, operating research (Java).
+      \item Programming: Assembly, OpenCL, C++, C\#, Python,
+        Javascript, operating research (Java).
       \end{itemize}
     }
 \end{entrylistlogodated}
@@ -147,10 +163,12 @@ I am currently working for PLUMgrid.
     {Turin, Italy}
     {
       Grade: 110/110 cum Laude\\
-      Algorithms (C), Computer Architecture, OS (Linux), Networking,
-      DB, Object oriented programming (Java).
+      Algorithms and Data Structure (C), Computer Architecture, OS
+      (Linux), Networking, DB, Object oriented programming (Java).
     }
 \end{entrylistlogodated}
+
+\framebreak
 
 \section{Projects}
 \begin{entrylistlogodated}
@@ -174,10 +192,22 @@ I am currently working for PLUMgrid.
         \begin{tabularx}{\textwidth}{XXXXXXXX}
           Supervisor: & Risso, F. & & & & & & \tabularnewline
         \end{tabularx}
-        Theoretical and practical state of art's analysis and
-        comparison of virtualization techniques that support live migration.\\
-        Keywords: hypervisor, container, LXC, Dockers, DMTCP, CRIU.
-      }
+        State of art's analysis and comparison of virtualization
+techniques that support live migration.\\
+        Keywords: hypervisor, container, LXC, Dockers, DMTCP, CRIU.  }
+  \entrydated
+      {2013 Fall}
+      {A Comparison of Graphics Processor Architectures for RFID Simulation}
+      {\href{http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7023928}{IEEE Paper}}
+      {
+        \begin{tabularx}{\textwidth}{XXXXXXXX}
+          Supervisors: & Montrocchio, B. & Ferrero, R. & & & & \tabularnewline
+        \end{tabularx}
+        Two popular frameworks for general-purpose computing on GPU
+        are considered in the comparison, i.e. CUDA and OpenCL, and
+        distinct implementations are provided for them, highlighting
+        their differences in code optimization and performance.\\
+        Keywords: GPU, CUDA, OpenCL.  }
 \end{entrylistlogodated}
 
 %% \framebreak
